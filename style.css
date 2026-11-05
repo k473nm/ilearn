@@ -1549,3 +1549,121 @@ button {
         width: 100%;
     }
 }
+
+/* =========================
+   19. بخش معرفی و افتخارات
+========================= */
+
+.profile-section {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* طراحی کارت اصلی (معرفی) */
+.profile-main {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(145deg, rgba(13,30,49,0.9), rgba(5,13,25,0.9));
+    border: 1px solid rgba(0,212,255,0.2);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+}
+
+.profile-avatar {
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 2px solid var(--cyan);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.2);
+}
+
+.profile-main h3 {
+    font-size: 24px;
+    color: var(--white);
+    margin-bottom: 5px;
+}
+
+.profile-role {
+    display: inline-block;
+    color: var(--cyan-soft);
+    font-size: 13px;
+    margin-bottom: 20px;
+    background: rgba(0, 212, 255, 0.08);
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.profile-main p {
+    color: var(--muted);
+    font-size: 14px;
+    max-width: 600px;
+    line-height: 2.2;
+}
+
+/* طراحی بقیه کارت‌ها */
+.profile-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0,212,255,0.4);
+}
+
+.profile-icon {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.profile-card h3 {
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.profile-list {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.profile-list li span {
+    font-size: 18px;
+}
+
+/* تنظیمات موبایل */
+@media (max-width: 700px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+    .profile-main {
+        grid-column: span 1;
+    }
+}
