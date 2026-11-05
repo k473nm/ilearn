@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050d19">
+    <title>مقالات | i learn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- پس زمینه تزئینی -->
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <!-- نوار ناوبری (دقیقا کپی شده از صفحه اصلی) -->
+    <header class="navbar">
+        <a href="index.html" class="brand">
+            <span class="brand-mark">i</span>
+            <span>learn<span class="brand-dot">.</span></span>
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">خانه</a>
+            <a href="index.html#explore">موضوعات</a>
+            <a href="articles.html" class="active">مقالات</a>
+            <a href="index.html#about">درباره ما</a>
+        </nav>
+
+        <a href="index.html#explore" class="nav-cta">
+            شروع کاوش
+            <span>↗</span>
+        </a>
+        
+        <button class="menu-toggle" aria-label="باز کردن منو">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <!-- محتوای صفحه جدید اینجا قرار می‌گیره -->
+        <section class="section" style="padding-top: 150px;">
+            
+            <div class="section-top">
+                <div>
+                    <span class="section-kicker">ALL ARTICLES</span>
+                    <h2>همه مقالات</h2>
+                    <p>مجموعه‌ای از ایده‌ها و مطالب علمی برای کاوش بیشتر.</p>
+                </div>
+            </div>
+
+            <!-- اینجا کارت‌های مقالات رو قرار بده -->
+            <div class="article-grid">
+                <p style="color: var(--muted);">به زودی مقالات جدیدی اینجا قرار می‌گیرد...</p>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- پاورقی (کپی شده از صفحه اصلی) -->
+    <footer class="footer">
+        <a href="index.html" class="brand">
+            <span class="brand-mark">i</span>
+            <span>learn<span class="brand-dot">.</span></span>
+        </a>
+        <p>برای ذهن‌هایی که به دانستن قانع نیستند.</p>
+        <span class="footer-copy">© ۲۰۲۶ i learn</span>
+    </footer>
+
+    <script>
+        // کدهای مربوط به منوی موبایل
+        const menuButton = document.querySelector('.menu-toggle');
+        const navigation = document.querySelector('.nav-links');
+        menuButton.addEventListener('click', () => {
+            navigation.classList.toggle('show');
+            menuButton.classList.toggle('opened');
+        });
+    </script>
+
+</body>
+</html>
