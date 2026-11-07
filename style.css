@@ -1838,3 +1838,45 @@ html, body {
         max-width: 100% !important;
     }
 }
+
+/* =========================
+   22. تم روشن
+========================= */
+
+body.light-theme {
+    --bg: #f5f9fc;
+    --bg-soft: #eaf2f8;
+    --surface: #ffffff;
+    --surface-light: #f0f6fa;
+    --white: #0a1a2a;
+    --muted: #4a6278;
+    --border: rgba(0,0,0,0.1);
+    --cyan: #0099cc;
+    --cyan-soft: #0077aa;
+}
+
+.theme-toggle {
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    color: var(--cyan);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    display: grid;
+    place-items: center;
+    transition: 0.3s;
+    margin-right: 10px;
+}
+
+.theme-toggle:hover {
+    background: rgba(0, 212, 255, 0.2);
+    transform: scale(1.05);
+}
+
+@media (max-width: 700px) {
+    .theme-toggle {
+        display: none;
+    }
+}
