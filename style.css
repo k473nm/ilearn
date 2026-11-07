@@ -1922,3 +1922,64 @@ body.light-theme {
         display: none;
     }
 }
+
+/* =========================
+   23. اصلاح تم روشن برای بخش‌های خاص
+========================= */
+
+/* بخش ویژه (کشف کن) */
+body.light-theme .feature-section {
+    background: linear-gradient(125deg, #eaf2f8, #ffffff 80%);
+    border-color: rgba(0, 153, 204, 0.2);
+}
+
+/* پس‌زمینه‌ی تصویرسازی بخش ویژه */
+body.light-theme .feature-image {
+    background: radial-gradient(ellipse at 50% 50%, #d0e8f5, transparent 55%),
+                linear-gradient(145deg, #f0f6fa, #ffffff);
+    border-color: rgba(0, 153, 204, 0.2);
+}
+
+/* کارت‌های مقاله (متن‌ها دیده بشن) */
+body.light-theme .article-card {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* دکمه‌ی ادامه مطالعه */
+body.light-theme .article-details summary {
+    background: rgba(0, 153, 204, 0.05);
+    border-color: rgba(0, 153, 204, 0.2);
+}
+
+body.light-theme .article-details summary:hover {
+    background: rgba(0, 153, 204, 0.15);
+}
+
+/* بخش پایانی (دنیا پر از چیزهایی است...) */
+body.light-theme .closing-section {
+    background: radial-gradient(ellipse at 50% 100%, #d0e8f5 60%, transparent),
+                #f0f6fa;
+    border-color: rgba(0, 153, 204, 0.2);
+}
+
+/* بخش سوشال مدیا */
+body.light-theme .social-section {
+    background: radial-gradient(circle at 50% 120%, rgba(0, 153, 204, 0.15), transparent 60%),
+                linear-gradient(145deg, #f0f6fa, #ffffff);
+    border-color: rgba(0, 153, 204, 0.2);
+}
+
+/* منو روی موبایل (پس‌زمینه‌ی کشویی) */
+body.light-theme .nav-links {
+    background: rgba(245, 249, 252, 0.97);
+}
+
+/* پاورقی */
+body.light-theme .footer {
+    background: #eaf2f8;
+}
+
+/* پس‌زمینه‌ی هدر */
+body.light-theme .navbar {
+    background: rgba(245, 249, 252, 0.85);
+}
