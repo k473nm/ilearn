@@ -1753,7 +1753,6 @@ button {
 
 /* افکت شیشه‌ای و نورانی برای کارت‌های مقاله */
 .article-card {
-    background: rgba(13, 30, 49, 0.7) !important;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 212, 255, 0.1) !important;
@@ -1982,4 +1981,43 @@ body.light-theme .footer {
 /* پس‌زمینه‌ی هدر */
 body.light-theme .navbar {
     background: rgba(245, 249, 252, 0.85);
+}
+
+/* =========================
+   24. فیکس نهایی تم روشن برای کارت‌های مقاله
+========================= */
+
+body.light-theme .article-card {
+    background: #ffffff !important;
+    border-color: rgba(0, 153, 204, 0.2) !important;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+body.light-theme .article-card:hover {
+    box-shadow: 0 10px 30px rgba(0, 153, 204, 0.15) !important;
+}
+
+/* متن‌های داخل کارت مقاله */
+body.light-theme .article-body p,
+body.light-theme .article-meta,
+body.light-theme .article-full {
+    color: #333333 !important;
+}
+
+/* تیترهای داخل کارت مقاله */
+body.light-theme .article-body h3,
+body.light-theme .article-full h4 {
+    color: #0a1a2a !important;
+}
+
+/* دکمه ادامه مطالعه */
+body.light-theme .article-details summary {
+    background: #f0f6fa !important;
+    border-color: rgba(0, 153, 204, 0.3) !important;
+    color: #0099cc !important;
+}
+
+/* خط جداکننده بالای دکمه */
+body.light-theme .article-details {
+    border-top-color: rgba(0, 0, 0, 0.1) !important;
 }
