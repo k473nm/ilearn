@@ -2021,3 +2021,25 @@ body.light-theme .article-details summary {
 body.light-theme .article-details {
     border-top-color: rgba(0, 0, 0, 0.1) !important;
 }
+
+/* =========================
+   25. فیکس کارت‌های شناور در تم روشن
+========================= */
+
+body.light-theme .floating-card {
+    background: #ffffff !important;
+    border-color: rgba(0, 153, 204, 0.2) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+body.light-theme .floating-card strong {
+    color: #0a1a2a !important;
+}
+
+body.light-theme .floating-card small {
+    color: #4a6278 !important;
+}
+
+body.light-theme .floating-icon {
+    color: #0099cc !important;
+}
