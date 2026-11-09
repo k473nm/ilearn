@@ -42,3 +42,16 @@ ctaButton.addEventListener('click', () => {
     // متن دکمه رو به «خوش آمدی!» تغییر بده
     ctaButton.innerHTML = "خوش آمدی! ✨";
 });
+
+// --- تمرین: تغییر موقت رنگ پس‌زمینه ---
+const bodyElement = document.body;
+
+ctaButton.addEventListener('click', () => {
+    // رنگ پس‌زمینه رو به یه آبی تیره‌ی متفاوت تغییر بده
+    bodyElement.style.backgroundColor = "#0a1a2a";
+    
+    // بعد از ۱ ثانیه (۱۰۰۰ میلی‌ثانیه)، رنگ رو به حالت اولش برگردون
+    setTimeout(() => {
+        bodyElement.style.backgroundColor = ""; // "" یعنی رنگ پیش‌فرض CSS رو بگیر
+    }, 1000);
+});
