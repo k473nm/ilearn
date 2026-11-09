@@ -2043,3 +2043,45 @@ body.light-theme .floating-card small {
 body.light-theme .floating-icon {
     color: #0099cc !important;
 }
+
+/* =========================
+   27. استایل اختصاصی کارت‌های شناور
+========================= */
+
+/* استایل پیش‌فرض (برای تم تیره) */
+.floating-card {
+    background: rgba(13, 30, 49, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.13);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.floating-card strong {
+    color: var(--white);
+}
+
+.floating-card small {
+    color: var(--muted);
+}
+
+.floating-icon {
+    color: var(--cyan);
+}
+
+/* استایل مخصوص تم روشن */
+body.light-theme .floating-card {
+    background: #ffffff;
+    border-color: rgba(0, 153, 204, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+body.light-theme .floating-card strong {
+    color: #0a1a2a;
+}
+
+body.light-theme .floating-card small {
+    color: #4a6278;
+}
+
+body.light-theme .floating-icon {
+    color: #0099cc;
+}
