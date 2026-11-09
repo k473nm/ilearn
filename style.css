@@ -2085,3 +2085,25 @@ body.light-theme .floating-card small {
 body.light-theme .floating-icon {
     color: #0099cc;
 }
+
+/* =========================
+   28. مدیریت نمایش آیکون‌های تم
+========================= */
+
+/* در حالت پیش‌فرض (دارک)، خورشید دیده می‌شه و ماه مخفیه */
+.theme-toggle .icon-sun {
+    display: block;
+}
+
+.theme-toggle .icon-moon {
+    display: none;
+}
+
+/* وقتی روی سایت کلاس light-theme باشه (روشن)، ماه دیده می‌شه و خورشید مخفی */
+body.light-theme .theme-toggle .icon-sun {
+    display: none;
+}
+
+body.light-theme .theme-toggle .icon-moon {
+    display: block;
+}
