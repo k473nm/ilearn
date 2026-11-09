@@ -34,3 +34,11 @@ const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'light') {
     document.body.classList.add('light-theme');
 }
+
+// --- تمرین: تغییر متن دکمه با کلیک ---
+const ctaButton = document.querySelector('.nav-cta');
+
+ctaButton.addEventListener('click', () => {
+    // متن دکمه رو به «خوش آمدی!» تغییر بده
+    ctaButton.innerHTML = "خوش آمدی! ✨";
+});
